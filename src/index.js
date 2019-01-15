@@ -8,15 +8,15 @@ const info = {
   http: 'https://'
 }
 
-window.location = info.http + info.to + info.currentURL;
+// window.location = info.http + info.to + info.currentURL;
   
 class App extends Component {
   render() {
     return (
-        <div className="App">
-        <header className="App-header">
+        <div className="app">
+        <header className="app-header">
         Redirecting to
-          <a className="App-link"
+          <a className="app-link"
             href={info.http + info.to + info.currentURL}
             rel="noopener noreferrer"
           >
