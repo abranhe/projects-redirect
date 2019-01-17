@@ -8,7 +8,7 @@ const info = {
   http: 'https://'
 }
 
-// window.location = info.http + info.to + info.currentURL;
+window.location = info.http + info.to + info.currentURL;
   
 class App extends Component {
   render() {
