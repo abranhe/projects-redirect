@@ -16,9 +16,10 @@ class App extends Component {
         <div className="app">
         <header className="app-header">
         <h3>Redirecting to </h3> <code>projects.abranhe.com{info.currentURL}</code>
-        <Route component={() => {
+        <Route  path="*" component={() => {
             window.location = info.http + info.to + info.currentURL
         }}/>
+        404
         </header>
         </div>
         </Router>
