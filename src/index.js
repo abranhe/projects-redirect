@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
 
 const info = {
@@ -8,22 +9,34 @@ const info = {
   http: 'https://'
 }
 
-window.location = info.http + info.to + info.currentURL;
+class Redirect extends Component {
+    constructor( props ) {
+      super();
+      this.state = { ...props };
+    }
+    componentWillMount() {
+      window.location = info.http + info.to + info.currentURL;
+    }
+    render() {
+      return (
+        <div>
+            <h3>Redirecting to </h3>
+            <code>projects.abranhe.com{info.currentURL}</code>
+        </div>
+      );
+    }
+  }
   
 class App extends Component {
   render() {
     return (
+        <Router>
         <div className="app">
         <header className="app-header">
-        Redirecting to
-          <a className="app-link"
-            href={info.http + info.to + info.currentURL}
-            rel="noopener noreferrer"
-          >
-            {info.to + info.currentURL}
-          </a>
+        <Route component={ Redirect }/>
         </header>
         </div>
+        </Router>
     );
   }
 }
