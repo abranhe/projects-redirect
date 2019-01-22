@@ -13,8 +13,7 @@ const info = {
         return (
             <div className="app">
             <header className="app-header">
-                <h3>Redirecting to </h3> 
-                
+                <h3>Redirecting to </h3>
                 <div>
                 <code>projects.abranhe.com{info.currentURL}</code>
                 <Route  path="*" component={() => {
