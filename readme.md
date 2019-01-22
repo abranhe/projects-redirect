@@ -1,7 +1,7 @@
 <div align="center">
 	<br>
 	<h2>
-	<a href="https://2018.archived.abranhe.com/">
+	<a href="https://p.abranhe.com/">
     <img src="https://i.postimg.cc/hv0mRjgV/redirect-traffic.gif">
     </a>
 	</h2>
@@ -26,7 +26,7 @@ React, what else? 🙃
 ## Try it?
 
 
-- [p.abranhe.com/username](https://projects.abranhe.com/username) will be - [p.abranhe.com/username](https://projects.abranhe.com/username)
+- [p.abranhe.com/username](https://projects.abranhe.com/username) will be - [projects.abranhe.com/username](https://projects.abranhe.com/username)
 
 - etc
 
